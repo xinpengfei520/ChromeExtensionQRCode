@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "网页二维码生成器",
+  "version": "1.0",
+  "description": "生成当前网页的二维码,包含网站logo和域名",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content.css"],
+      "js": ["content.js"]
+    }
+  ]
+}

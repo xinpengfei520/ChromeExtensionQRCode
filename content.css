@@ -1,0 +1,11 @@
+#qr-floating-icon {
+  position: fixed;
+  bottom: 52px;
+  right: 52px;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 9999;
+}

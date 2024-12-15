@@ -1,0 +1,21 @@
+body {
+  width: 250px;
+  padding: 0;
+  margin: 0;
+}
+
+#qrcode-container {
+  background-color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+#qrcode {
+  margin-bottom: 10px;
+}
+
+#domain {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
