@@ -1,0 +1,2 @@
+# ChromeExtensionQRCode
+QRCode Chrome Extension.
