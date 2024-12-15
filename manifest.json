@@ -1,14 +1,18 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "网页二维码生成器",
   "version": "1.0",
   "description": "生成当前网页的二维码,包含网站logo和域名",
   "permissions": [
     "activeTab",
-    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.google.com/",
+    "https://favicon.yandex.net/",
     "<all_urls>"
   ],
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -17,5 +21,8 @@
       "css": ["content.css"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
 }

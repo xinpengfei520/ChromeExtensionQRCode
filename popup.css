@@ -12,10 +12,20 @@ body {
 
 #qrcode {
   margin-bottom: 10px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#qrcode canvas {
+  width: 100%;
+  height: 100%;
 }
 
 #domain {
   font-family: Arial, sans-serif;
   font-size: 14px;
   color: #333;
+  margin-top: 10px;
 }
